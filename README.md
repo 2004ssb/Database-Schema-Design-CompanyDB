@@ -30,38 +30,7 @@ The project stores employee details such as name, address, age, salary, and desi
 
 ## 💾 SQL Script
 
-```sql
--- Database creation
-CREATE DATABASE CompanyDB;
-
--- Use the database
-USE CompanyDB;
-
--- Create the Employee table
-CREATE TABLE Employee(
-    ID INT PRIMARY KEY,
-    Name VARCHAR(100),
-    Address VARCHAR(300),
-    Age INT,
-    Salary DECIMAL(10,2),
-    Designation VARCHAR(100)
-);
-
--- Insert sample records
-INSERT INTO Employee
-(ID, Name, Address, Age, Salary, Designation)
-VALUES
-(1, "sakshi","vashi sec11 ,juhugoan",21,60000,"developer"),
-(2, "samiksha","mulund west near haldiram",25,120000,"senoir developer"),
-(3, "sushmita","matunga devi-joti",42,90000,"manager"),
-(4, "sambhaji","gansoli west",49,150000,"manager"),
-(5, "akshay","airoli nirbhuvan society",30,90000,"manager"),
-(6, "samidha","koperkhairane havale",27,80000,"accountant");
-
--- View all records
-SELECT * FROM Employee;
-
-
+SQL script (schema.sql) – to create the database (CompanyDB), build the tables with primary and foreign keys, and insert sample records.
 ER DAIGRAM
 
 The chart depicts a corporation's worker management system. It illustrates how workers, departments, and the relationship within are set up.
@@ -104,4 +73,5 @@ Employee - Employee (managerid):
 Shows the hierarchical reporting inside the company. An employee can be the manager of other employees.
 
 Department - Employee (DeptHeadID): 
+
 Indicates which employee is the head of the department.
