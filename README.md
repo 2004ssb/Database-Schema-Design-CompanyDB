@@ -31,8 +31,9 @@ The project stores employee details such as name, address, age, salary, and desi
 ## 💾 SQL Script
 
 SQL script (schema.sql) – to create the database (CompanyDB), build the tables with primary and foreign keys, and insert sample records.
-ER DAIGRAM
 
+
+ER DAIGRAM
 The chart depicts a corporation's worker management system. It illustrates how workers, departments, and the relationship within are set up.
 1️⃣ Employee Entity
 This entity stores all that individual information about an employee.
@@ -75,3 +76,4 @@ Shows the hierarchical reporting inside the company. An employee can be the mana
 Department - Employee (DeptHeadID): 
 
 Indicates which employee is the head of the department.
+
